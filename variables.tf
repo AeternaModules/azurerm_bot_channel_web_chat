@@ -20,8 +20,8 @@ EOT
     site = optional(object({
       endpoint_parameters_enabled = optional(bool)
       name                        = string
-      storage_enabled             = optional(bool, true)
-      user_upload_enabled         = optional(bool, true)
+      storage_enabled             = optional(bool) # Default: true
+      user_upload_enabled         = optional(bool) # Default: true
     }))
   }))
 }
