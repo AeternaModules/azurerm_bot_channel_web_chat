@@ -20,8 +20,8 @@ EOT
     site = optional(list(object({
       endpoint_parameters_enabled = optional(bool)
       name                        = string
-      storage_enabled             = optional(bool) # Default: true
-      user_upload_enabled         = optional(bool) # Default: true
+      storage_enabled             = optional(bool)
+      user_upload_enabled         = optional(bool)
     })))
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_bot_channel_web_chat's provider source ---
